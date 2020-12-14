@@ -9,9 +9,9 @@ import source.SourceInAnotherPackage;
 public interface RecordMapper {
 
     TargetRecord mapWorks(SourceInSamePackage source);
-//
-//    TargetRecord mapDoesntWork(SourceInAnotherPackage source);
-//
-//    @Mapping(target = "data", source = "data")
-//    TargetRecord mapDoesntWorkToo(SourceInAnotherPackage source);
+
+    TargetRecord mapDoesntWork(SourceInAnotherPackage source);
+
+    @Mapping(target = "data", source = "data")
+    TargetRecord mapDoesntWorkToo(SourceInAnotherPackage source);
 }
